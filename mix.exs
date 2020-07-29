@@ -39,7 +39,7 @@ defmodule PhEctoAcl.MixProject do
     [
       {:ecto, "~> 3.2"},
       {:ecto_sql, "~> 3.3"},
-      {:plug, "~> 1.8.3"}
+      {:plug, "~> 1.10"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]
   end
