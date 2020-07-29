@@ -1,8 +1,8 @@
 defmodule Mix.Tasks.InsertTableActions do
   use Mix.Task
   import Mix.Ecto
-  alias ExAcl.InformationSchemaTable, as: Information
-  alias ExAcl.TableAction
+  alias PhEctoAcl.InformationSchemaTable, as: Information
+  alias PhEctoAcl.TableAction
 
   @shortdoc "mix insert_table_actions"
 

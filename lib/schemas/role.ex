@@ -1,4 +1,4 @@
-defmodule ExAcl.Role do
+defmodule PhEctoAcl.Role do
   defmacro __using__(options) do
     quote do
       use Ecto.Schema

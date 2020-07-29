@@ -1,4 +1,4 @@
-defmodule ExAcl.UserRoleTest do
+defmodule PhEctoAcl.UserRoleTest do
   use ExUnit.Case
   alias ExAclTest.UserRole
 

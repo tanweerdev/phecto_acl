@@ -1,4 +1,4 @@
-defmodule ExAcl.PermissionSystem do
+defmodule PhEctoAcl.PermissionSystem do
   def table_level_permissions(user_id, method, table_name, options) do
     # TODO: require options and raise errors if nil
     user_role_agent = options[:user_role_agent]
@@ -45,11 +45,11 @@ defmodule ExAcl.PermissionSystem do
 
   def user_roles(user_id, user_role_agent: user_role_agent) do
     # user_role_agent_child = %{
-    #   id: ExAcl.UserRoleAgent,
-    #   start: {ExAcl.UserRoleAgent, :start_link, [[repo: HaiData.Repo]]}
+    #   id: PhEctoAcl.UserRoleAgent,
+    #   start: {PhEctoAcl.UserRoleAgent, :start_link, [[repo: HaiData.Repo]]}
     # }
 
-    # DynamicSupervisor.start_child(ExAcl.DynamicSupervisor, user_role_agent_child)
+    # DynamicSupervisor.start_child(PhEctoAcl.DynamicSupervisor, user_role_agent_child)
 
     Enum.reduce(user_role_agent.get(), [], fn user_role, acc ->
       if user_role.user_id == user_id do

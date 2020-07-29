@@ -1,4 +1,4 @@
-defmodule ExAcl.RoleRouteActionTest do
+defmodule PhEctoAcl.RoleRouteActionTest do
   use ExUnit.Case
   alias ExAclTest.{RoleRouteAction}
 

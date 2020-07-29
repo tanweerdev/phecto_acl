@@ -1,4 +1,4 @@
-defmodule ExAcl.RouteActionAgent do
+defmodule PhEctoAcl.RouteActionAgent do
   defmacro __using__(options) do
     quote do
       use Agent

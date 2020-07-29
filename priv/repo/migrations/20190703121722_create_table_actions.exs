@@ -1,4 +1,4 @@
-defmodule ExAcl.Migrations.CreateActions do
+defmodule PhEctoAcl.Migrations.CreateActions do
   use Ecto.Migration
 
   def change do

@@ -1,4 +1,4 @@
-defmodule ExAcl.UserRoleAgent do
+defmodule PhEctoAcl.UserRoleAgent do
   defmacro __using__(options) do
     quote do
       use Agent

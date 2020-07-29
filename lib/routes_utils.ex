@@ -1,11 +1,11 @@
-defmodule ExAcl.Routes do
+defmodule PhEctoAcl.Routes do
   alias Phoenix.Router.ConsoleFormatter
 
   # @shortdoc "Get all routes"
 
   @moduledoc """
   Get all routes for the default or a given router.
-  routes = ExAcl.Routes.get_routes [HaiApi.Router]
+  routes = PhEctoAcl.Routes.get_routes [HaiApi.Router]
   The default router is inflected from the application
   name unless a configuration named `:namespace`
   is set inside your application configuration. For example,

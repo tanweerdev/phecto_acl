@@ -1,4 +1,4 @@
-defmodule ExAcl.RoleRouteAction do
+defmodule PhEctoAcl.RoleRouteAction do
   defmacro __using__(options) do
     quote do
       use Ecto.Schema

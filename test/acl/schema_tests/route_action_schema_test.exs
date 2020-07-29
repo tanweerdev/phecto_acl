@@ -1,4 +1,4 @@
-defmodule ExAcl.RouteActionTest do
+defmodule PhEctoAcl.RouteActionTest do
   use ExUnit.Case
   alias ExAclTest.RouteAction
 

@@ -1,4 +1,4 @@
-defmodule ExAcl.MixProject do
+defmodule PhEctoAcl.MixProject do
   use Mix.Project
 
   def project do

@@ -1,4 +1,4 @@
-defmodule ExAcl.RoleTableActionTest do
+defmodule PhEctoAcl.RoleTableActionTest do
   use ExUnit.Case
   alias ExAclTest.RoleTableAction
 

@@ -1,4 +1,4 @@
-defmodule ExAcl.TableActionAgent do
+defmodule PhEctoAcl.TableActionAgent do
   defmacro __using__(options) do
     quote do
       use Agent

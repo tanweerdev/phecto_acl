@@ -1,4 +1,4 @@
-defmodule ExAcl.TableActionTest do
+defmodule PhEctoAcl.TableActionTest do
   use ExUnit.Case
   alias ExAclTest.TableAction
 

@@ -1,4 +1,4 @@
-defmodule ExAcl.InformationSchemaTable do
+defmodule PhEctoAcl.InformationSchemaTable do
   @moduledoc false
   use Ecto.Schema
 
@@ -24,7 +24,7 @@ defmodule ExAcl.InformationSchemaTable do
 
   def get_all_tables(repo) do
     query =
-      from(t in ExAcl.InformationSchemaTable,
+      from(t in PhEctoAcl.InformationSchemaTable,
         where: t.table_schema == "public" and t.table_type == "BASE TABLE"
       )
 

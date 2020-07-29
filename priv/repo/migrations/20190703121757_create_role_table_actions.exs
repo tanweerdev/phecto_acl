@@ -1,4 +1,4 @@
-defmodule ExAcl.Migrations.AddConstraintsFieldToUsers do
+defmodule PhEctoAcl.Migrations.AddConstraintsFieldToUsers do
   use Ecto.Migration
 
   def change do

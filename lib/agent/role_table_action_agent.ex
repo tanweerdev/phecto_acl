@@ -1,4 +1,4 @@
-defmodule ExAcl.RoleTableActionAgent do
+defmodule PhEctoAcl.RoleTableActionAgent do
   defmacro __using__(options) do
     quote do
       use Agent

@@ -2,7 +2,7 @@ defmodule Mix.Tasks.InsertRole do
   use Mix.Task
   import Mix.Ecto
   import Ecto.Query
-  alias ExAcl.Role
+  alias PhEctoAcl.Role
 
   @shortdoc "mix insert_role"
 
@@ -19,8 +19,8 @@ defmodule Mix.Tasks.InsertRole do
   end
 
   def insert_role(user, repo) do
-    route_actions = repo.all(ExAcl.RouteAction)
-    table_actions = repo.all(ExAcl.TableAction)
+    route_actions = repo.all(PhEctoAcl.RouteAction)
+    table_actions = repo.all(PhEctoAcl.TableAction)
 
     data = [
       %{
@@ -41,7 +41,7 @@ defmodule Mix.Tasks.InsertRole do
             }
           ]
 
-          repo.insert_all(ExAcl.RoleRouteAction, data,
+          repo.insert_all(PhEctoAcl.RoleRouteAction, data,
             on_conflict: :replace_all,
             conflict_target: [:role_id, :route_action_id]
           )
@@ -55,7 +55,7 @@ defmodule Mix.Tasks.InsertRole do
             }
           ]
 
-          repo.insert_all(ExAcl.RoleTableAction, data,
+          repo.insert_all(PhEctoAcl.RoleTableAction, data,
             on_conflict: :replace_all,
             conflict_target: [:role_id, :table_action_id]
           )

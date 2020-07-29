@@ -3,6 +3,6 @@ defmodule ExAclTest do
   doctest ExAcl
 
   # test "greets the world" do
-  #   assert ExAcl.hello() == :world
+  #   assert PhEctoAcl.hello() == :world
   # end
 end

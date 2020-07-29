@@ -1,4 +1,4 @@
-defmodule ExAcl.RoleTableAction do
+defmodule PhEctoAcl.RoleTableAction do
   defmacro __using__(options) do
     quote do
       use Ecto.Schema

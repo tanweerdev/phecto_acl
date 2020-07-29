@@ -10,10 +10,10 @@ defmodule Acl.Plug.Authorize do
       def call(conn, opts) do
         current_user = get_user(conn)
 
-        conn_path = ExAcl.PermissionSystem.router_path(conn)
+        conn_path = PhEctoAcl.PermissionSystem.router_path(conn)
 
         actions =
-          ExAcl.PermissionSystem.route_level_permissions(
+          PhEctoAcl.PermissionSystem.route_level_permissions(
             current_user.id,
             conn.method,
             conn_path,

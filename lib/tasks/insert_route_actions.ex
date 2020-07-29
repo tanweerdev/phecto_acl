@@ -1,7 +1,7 @@
 defmodule Mix.Tasks.InsertRouteActions do
   use Mix.Task
   import Mix.Ecto
-  alias ExAcl.RouteAction
+  alias PhEctoAcl.RouteAction
 
   @shortdoc "mix insert_route_actions"
 
@@ -14,7 +14,7 @@ defmodule Mix.Tasks.InsertRouteActions do
     repo.start_link()
 
     routes =
-      ExAcl.Routes.get_routes([HaiApi.Router]) |> ExAcl.Routes.filter_method_and_path_array()
+      PhEctoAcl.Routes.get_routes([HaiApi.Router]) |> PhEctoAcl.Routes.filter_method_and_path_array()
 
     Enum.each(routes, fn {method, path} ->
       path_str = Enum.join(path, "/")

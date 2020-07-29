@@ -1,4 +1,4 @@
-defmodule ExAcl.SeedHelper do
+defmodule PhEctoAcl.SeedHelper do
   def priv_path_for(filename, opts \\ []) do
     app = opts[:app] || :acl
     repo_underscore = opts[:repo_underscore] || "repo"
