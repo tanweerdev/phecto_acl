@@ -5,7 +5,7 @@ Permission system for authorisation of routes and schema tables.
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `acl` to your list of dependencies in `mix.exs`:
+by adding `phecto_acl` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -17,4 +17,4 @@ end
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/acl](https://hexdocs.pm/acl).
+be found at [https://hexdocs.pm/phecto_acl](https://hexdocs.pm/phecto_acl).
