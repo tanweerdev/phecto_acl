@@ -1,6 +1,6 @@
 defmodule PhEctoAcl.TableActionTest do
   use ExUnit.Case
-  alias ExAclTest.TableAction
+  alias PhEctoAclTest.TableAction
 
   test "changeset with valid attributes" do
     changeset =

@@ -1,4 +1,4 @@
-defmodule ExAclTest.Instance do
+defmodule PhEctoAclTest.Instance do
   use Ecto.Schema
 
   import Ecto.Changeset

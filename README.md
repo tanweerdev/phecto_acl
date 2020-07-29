@@ -1,4 +1,4 @@
-# ExAcl
+# PhEctoAcl
 
 Permission system for authorisation of routes and schema tables.
 
@@ -10,7 +10,7 @@ by adding `acl` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:acl, "~> 0.1.0"}
+    {:phecto_acl, "~> 0.1.0"}
   ]
 end
 ```

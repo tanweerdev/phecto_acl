@@ -1,5 +1,5 @@
-defmodule ExAclTest.TableAction do
+defmodule PhEctoAclTest.TableAction do
   use PhEctoAcl.TableAction,
-    role_schema: ExAclTest.Role,
-    role_table_action_schema: ExAclTest.RoleTableAction
+    role_schema: PhEctoAclTest.Role,
+    role_table_action_schema: PhEctoAclTest.RoleTableAction
 end

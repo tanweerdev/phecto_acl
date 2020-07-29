@@ -1,6 +1,6 @@
 defmodule PhEctoAcl.RoleTest do
   use ExUnit.Case
-  alias ExAclTest.Role
+  alias PhEctoAclTest.Role
 
   test "changeset with valid attributes" do
     changeset = Role.changeset(%Role{}, %{id: "admin"})

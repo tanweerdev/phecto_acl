@@ -1,4 +1,4 @@
-defmodule ExAclTest.User do
+defmodule PhEctoAclTest.User do
   use Ecto.Schema
 
   import Ecto.Changeset
@@ -10,7 +10,7 @@ defmodule ExAclTest.User do
     field(:domain, :string, virtual: true)
     field(:email_address, :string, virtual: true)
     field(:username, :string, virtual: true)
-    many_to_many(:roles, ExAclTest.Role, join_through: "users_roles")
+    many_to_many(:roles, PhEctoAclTest.Role, join_through: "users_roles")
   end
 
   def changeset(data) when is_map(data) do

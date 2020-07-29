@@ -1,4 +1,4 @@
-defmodule ExAcl do
+defmodule PhEctoAcl do
   @moduledoc false
   use Application
 

@@ -1,5 +1,5 @@
-defmodule ExAclTest.RouteAction do
+defmodule PhEctoAclTest.RouteAction do
   use PhEctoAcl.RouteAction,
-    role_schema: ExAclTest.Role,
-    role_route_action_schema: ExAclTest.RoleRouteAction
+    role_schema: PhEctoAclTest.Role,
+    role_route_action_schema: PhEctoAclTest.RoleRouteAction
 end

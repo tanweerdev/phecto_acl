@@ -1,6 +1,6 @@
-defmodule ExAclTest.UserRole do
+defmodule PhEctoAclTest.UserRole do
   use PhEctoAcl.UserRole,
-    user_schema: ExAclTest.User,
-    instance_schema: ExAclTest.Instance,
-    role_schema: ExAclTest.Role
+    user_schema: PhEctoAclTest.User,
+    instance_schema: PhEctoAclTest.Instance,
+    role_schema: PhEctoAclTest.Role
 end

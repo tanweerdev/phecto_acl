@@ -1,6 +1,6 @@
-defmodule ExAclTest do
+defmodule PhEctoAclTest do
   use ExUnit.Case
-  doctest ExAcl
+  doctest PhEctoAcl
 
   # test "greets the world" do
   #   assert PhEctoAcl.hello() == :world

@@ -14,7 +14,8 @@ defmodule Mix.Tasks.InsertRouteActions do
     repo.start_link()
 
     routes =
-      PhEctoAcl.Routes.get_routes([HaiApi.Router]) |> PhEctoAcl.Routes.filter_method_and_path_array()
+      PhEctoAcl.Routes.get_routes([HaiApi.Router])
+      |> PhEctoAcl.Routes.filter_method_and_path_array()
 
     Enum.each(routes, fn {method, path} ->
       path_str = Enum.join(path, "/")

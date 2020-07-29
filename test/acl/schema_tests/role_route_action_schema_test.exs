@@ -1,6 +1,6 @@
 defmodule PhEctoAcl.RoleRouteActionTest do
   use ExUnit.Case
-  alias ExAclTest.{RoleRouteAction}
+  alias PhEctoAclTest.{RoleRouteAction}
 
   test "changeset with valid attributes" do
     changeset =
